@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" ng-app="angularfire">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Logo</a>
+        <ul class="left hide-on-med-and-down">
+            <li><a href="#/home">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <main ng-view></main>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/components/login.component.js"></script>
+<script src="app/components/home.component.js"></script>
+<script src="app/routes/routes.js"></script>
+<script src="app/service/firebase.service.js"></script>
+
+
+</body>
+</html>

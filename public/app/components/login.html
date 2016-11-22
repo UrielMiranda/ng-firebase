@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col s12 m6 offset-m3">
+        <div class="card ">
+            <div class="card-content ">
+                <span class="card-title">Login</span>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate" ng-model="$ctrl.email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="password" type="password" class="validate" ng-model="$ctrl.pass">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <button class="waves-effect waves-light btn" ng-click="$ctrl.loginUser($ctrl.email,$ctrl.pass)">Sign In</button>
+                        <button class="waves-effect waves-light btn" ng-click="$ctrl.createUser($ctrl.email,$ctrl.pass)">Create User</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card-action">
+                <button class="waves-effect waves-light btn facebook" ng-click="$ctrl.login('facebook')">Facebook</button>
+                <button class="waves-effect waves-light btn twitter" ng-click="$ctrl.login('twitter')">Twitter</button>
+                <button class="waves-effect waves-light btn google" ng-click="$ctrl.login('google')">Google</button>
+                <button class="waves-effect waves-light btn github" ng-click="$ctrl.login('github')">Github</button>
+            </div>
+        </div>
+    </div>
+</div>
